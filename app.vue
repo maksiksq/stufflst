@@ -19,12 +19,14 @@ const things = ref([
 
 <template>
   <main>
-    <h1>Maksiks' list of nifty stuffs</h1>
-    <div class="content-cont">
+    <section class="head-seg">
+      <h1>Maksiks' list of nifty stuffs</h1>
+    </section>
+    <section class="content-seg">
       <div v-for="thing in things" :key="thing.id" class="thing">
         <img :src="thing.img" :alt="thing.name" />
       </div>
-    </div>
+    </section>
   </main>
 </template>
 
@@ -40,10 +42,22 @@ html, body {
 </style>
 <style scoped>
 main {
-  & h1 {
-    color: yellow;
+  display: flex;
+  flex-direction: column;
+
+  & .head-seg {
+    display: flex;
+    justify-content: center;
+
+    & h1 {
+
+    }
   }
 
+  & .content-seg {
+    display: flex;
+    justify-content: center;
+  }
 
 }
 </style>
