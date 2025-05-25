@@ -9,8 +9,8 @@ const things = ref([
   },
   {
     id: 2,
-    name: 'wait',
-    link: 'https://fuckingfast.net/',
+    name: 'treesize free',
+    link: 'https://www.jam-software.com/treesize_free/',
     img: 'https://placehold.co/600x400/EEE/31343C'
   }
 ])
